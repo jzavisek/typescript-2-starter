@@ -1,0 +1,5 @@
+--recursive
+--timeout 5000
+--bail
+--check-leaks
+--globals indent

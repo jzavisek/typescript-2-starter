@@ -1,0 +1,20 @@
+---
+version: '2'
+services:
+
+  # Configure a database service in a container
+  database:
+    image: mongo:3
+    container_name: contacts-database
+    ports:
+    - 27017:27017
+    volumes_from:
+    - database-storage
+
+  # Configure persistent storage for the database service
+  database-storage:
+    image: mongo:3
+    container_name: contacts-database-storage
+    command: /bin/true
+    volumes:
+      - ./data:/data

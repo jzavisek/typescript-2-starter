@@ -1,0 +1,60 @@
+{
+  "name": "typescript-node",
+  "version": "1.0.0",
+  "description": "Express project starter written in TypeScript",
+  "scripts": {
+    "clean": "./bin/clean",
+    "compile": "./bin/compile",
+    "coverage": "./bin/coverage",
+    "lint": "./bin/lint",
+    "start": "./bin/run",
+    "test": "./bin/test"
+  },
+  "engines": {
+    "node": "~6.6.0",
+    "npm": "^3.9.0"
+  },
+  "author": "Josef Zavisek",
+  "license": "ISC",
+  "nyc": {
+    "exclude": [
+      "gulpfile.js",
+      "node_modules"
+    ]
+  },
+  "devDependencies": {
+    "@types/bcrypt": "0.0.30",
+    "@types/bluebird": "^3.0.33",
+    "@types/body-parser": "0.0.33",
+    "@types/bunyan": "0.0.30",
+    "@types/chai": "^3.4.33",
+    "@types/express": "^4.0.33",
+    "@types/istanbul": "^0.4.29",
+    "@types/jwt-simple": "^0.5.32",
+    "@types/mime": "0.0.29",
+    "@types/mocha": "^2.2.32",
+    "@types/mongodb": "^2.1.33",
+    "@types/mongoose": "^4.5.36",
+    "@types/superagent": "^2.0.34",
+    "@types/supertest": "^1.1.31",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-spawn-mocha": "^3.1.0",
+    "gulp-tsc": "^1.2.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2",
+    "nyc": "^8.3.0",
+    "supertest": "^2.0.0",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "bunyan": "^1.8.1",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "mongoose": "^4.5.10"
+  }
+}
