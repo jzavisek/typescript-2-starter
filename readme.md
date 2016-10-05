@@ -1,4 +1,4 @@
-# TypeScript 2.0 sample project
+# TypeScript 2 sample project
 
 ## About
 This example shows how to configure a project with TypeScript 2.0. Here's what included:
